@@ -1,0 +1,648 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.app-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.image-container {
+  position: relative; /* Change to relative positioning */
+  width: 51%; /* Adjust as needed */
+  height: 100vh; /* Adjust height to be a percentage of the viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* Hide any overflow */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-image: url('self1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* White blur effect */
+  backdrop-filter: blur(4px); /* Apply blur */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  margin-left: 200px;
+  justify-content: space-between ;
+  align-items: center;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 100vh;
+  padding-right: 30px;
+}
+
+.nav-bar{
+  width: 10%;
+  margin-left: 25px;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s;
+  z-index: 1000;
+}
+#mySidenav {
+  width: 60px;
+  border-radius: 70px;
+  background-color: transparent; 
+  padding-top: 20px;
+  transition: width 0.3s;
+}
+
+#mySidenav a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(10, 10, 10);
+  background-color: rgba(211, 209, 209, 0.5); 
+  border-radius: 40px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  transition: background-color 0.3s, width 0.3s; /* Smooth background transition */
+}
+
+#mySidenav a .nav-text {
+  opacity: 0; 
+  margin-left: -40px; /* Initially hide the text */
+  transition: margin-left 0.3s, opacity 0.3s; /* Transition for smooth reveal */
+}
+
+#mySidenav a:hover .nav-text {
+  opacity: 1; 
+  margin-left: 10px; /* Slide text in on hover */
+}
+
+#mySidenav a i {
+  color: rgba(61, 39, 102, 0.8);
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  transition: margin-right 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#mySidenav a:hover i {
+  margin-right: 10px; /* Slide icon slightly on hover */
+  color: white; /* Change icon color on hover */
+} 
+
+#mySidenav a:hover {
+  background-color: rgba(61, 39, 102, 0.8); 
+  color: white;
+  width: 170px; /* Expand only the hovered item */
+  transition: width 0.3s, background-color 0.3s; /* Smooth width transition */
+}
+
+#mySidenav:hover {
+  width: 60px; /* Keep sidenav at 60px when not hovering on individual items */
+}
+
+.home-section{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+section{
+  margin-bottom: 150px;
+  width: 100%;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-section {
+  max-width: 1000px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #000;
+  position: relative;
+  padding-left: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.name-heading{
+  color: #414040;
+  font-size: 54px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+} 
+
+.description{
+  margin-top: 15px;
+  font-size: 26px;
+  color: #272829;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.connection-icons-container{
+  display: flex;
+  margin-top: 15px;
+}
+.connection-icon{
+  margin-right: 15px;
+  font-size: x-large;
+  color: #75787d;
+}
+p span{
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgb(39, 39, 133);
+}
+
+
+
+.section-title{
+  color: #515151;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family:  "Raleway", sans-serif;
+}
+
+.skills-section-title{
+  color: #515151;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family:  "Raleway", sans-serif;
+  margin-top: 30px;
+}
+
+.about-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  min-height: 100vh;
+}
+
+.self-image{
+  height: 370px;
+}
+
+.section-highlight{
+  margin-top: -15px;
+  width: 150px;
+  height: 3px; 
+  background-color: #181818;
+  display: block;
+}
+
+.about-content-section{
+  display: flex;
+  padding: 20px;
+}
+
+.self-content-section{
+  padding: 0px 20px 0px 20px;
+}
+.role{
+  color: #515151;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.self-desc{
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.self-details{
+  display: flex;
+  padding-top: 20px;
+}
+.detail{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.details-section{
+  margin-right: 40px;
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li i{
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.skills-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-bar{
+  width: 620px;
+  padding: 20px;
+}
+label{
+  padding-right: 5px;
+}
+
+#file{
+  min-width: 450px;
+  height: 8px;
+}
+
+progress {
+  width: 90%; /* Full width */
+  height: 20px; /* Height of the progress bar */
+  -webkit-appearance: none; /* Remove default appearance for Webkit browsers */
+  appearance: none; /* Remove default appearance for other browsers */
+}
+
+/* Webkit-based browsers */
+progress::-webkit-progress-bar {
+  background-color: #e1dede; /* White color for the remaining part */
+  border-radius: 10px; /* Rounded corners */
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(61, 39, 102, 1); /* Blue color for the filled part */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background-color: rgb(61, 39, 102, 1); /* Blue color for the filled part */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.resume-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.resume-section1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex:1;
+  margin-right: 30px;
+}
+.resume-section2{
+  flex: 1;
+}
+
+.resume-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.resume-title{
+  font-size: 26px;
+  color:#45505B;
+  font-weight: 600;
+}
+.resume-section-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+  color: rgb(72, 6, 163);
+}
+
+.line {
+  width: 1px; 
+  background-color: black; 
+  margin: 0 10px;
+  color: rgb(72, 6, 163);
+}
+
+.summary-line{
+  height: 195px;
+}
+
+p em{
+  font-size: 16px;
+  color: #272829;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.resume-content-title{
+  color: #535353;
+  font-weight: 500;
+}
+.resume-content-list li{
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #272829;
+  line-height: 1.7;
+}
+
+.period{
+  color:#45505B;
+  background-color: #e1dede;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+}
+.edu-desc{
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #272829;
+}
+
+.edu-line1{
+  height: 172px;
+}
+.edu-line2{
+  height: 190px;
+}
+.cert-line1{
+  height: 95px;
+}
+.cert-line2{
+  height: 100px;
+}
+.cert-line3{
+  height: 100px;
+}
+.academic-line1{
+  height: 140px;
+}
+
+
+
+.project-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  margin-top: 40px;
+}
+.project-container{
+  display: flex;
+  background-color: #767778;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 320px;
+  height: 350px;
+  background-color: white;
+  border:1px solid #dfe2e4;
+}
+
+.project-container {
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+}
+
+.project-container:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: scale(1.05); 
+}
+
+.project-pic{
+  height: 180px;
+  width: 320px;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.project-tech-button{
+  border-color: transparent;
+  background-color: #f3f1f1;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding:2px 10px 2px 10px;
+  margin-bottom: 4px;
+}
+.project-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-title{
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: bold ;
+}
+.buttons-container{
+  margin-top: 20px;
+}
+.visit-button {
+  background-color: transparent;
+  margin-right: 10px;
+  padding: 0px 10px;
+  border: 1px solid #000; /* Add a border */
+  color: #000; /* Set text color */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+.visit-button a{
+  color: black;
+  text-decoration: none;
+}
+
+.visit-button a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.visit-button:hover {
+  background-color: #000; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  border-color: #000; /* Keep the border color consistent */
+}
+
+.code-button {
+  background-color: #000;
+  color: white;
+  border: 1px solid transparent;
+  padding: 0px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.code-button:hover {
+  background-color: #fff; /* Change background color to white on hover */
+  color: #000; /* Change text color to black on hover */
+  border-color: #000; /* Add a black border */
+}
+
+.code-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.code-button a:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.projects-section{
+  margin-bottom: 25rem;
+  margin-top: 10rem;
+}
+
+
+.contact-content-sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-content-section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+
+}
+.contact-content-section2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item i{
+  font-size: 20px;
+  margin-right: 20px;
+  color: rgba(61, 39, 102, 0.8);
+  background-color:rgb(250, 241, 254) ;
+  padding: 10px;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-item-details{
+  display: flex;
+  flex-direction: column  ;
+}
+.input-field{
+  width: 370px;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border:1px solid rgb(227, 227, 227);
+}
+.subject{
+  width: 740px;
+}
+.Message{
+  height: 200px;
+  width: 740px;
+}
+placeholder{
+  color: #ededed;
+}
+.send-message{
+  background-color: rgba(61, 39, 102, 0.8);
+  color:white;
+  border-color:transparent;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.send-message:hover {
+  background-color: rgba(61, 39, 102, 1); 
+  color: #e0e0e0; 
+  cursor: pointer; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); 
+  transition: all 0.3s ease; 
+}
+
+
+.send-cont{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+}
+
+.last-section{
+  margin-top: 150px;
+  background-color:#fdf9f9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 500px;
+}
+
+.name-heading{
+  font-size: 38px;
+  font-family: "Raleway", sans-serif;
+}
+.connection{
+  font-size: 20px;
+  font-weight: 500;
+}
+.connection-icons{
+  display: flex;
+}
+.contact{
+  margin-bottom: 200px;
+}

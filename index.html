@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <script src = "index.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+
+    <div class="nav-bar">
+      <div id="mySidenav" class="sidenav">
+        <a href = "#home" id = "nav-home"><i class="fa-solid fa-house"></i><span class = "nav-text">Home</span></a>
+        <a href="#about" id="nav-about"><i class="fas fa-user"></i><span class = "nav-text">About</span></a>
+        <a href="#resume" id="nav-resume"><i class="fas fa-file-alt"></i><span class = "nav-text">Resume</span></a>
+        <a href="#projects" id="nav-projects"><i class="fas fa-briefcase"></i><span class = "nav-text">Projects</span></a>
+        <a href="#contact" id="nav-contact"><i class="fas fa-envelope"></i><span class = "nav-text">Contact</span></a>
+      </div>
+    </div>
+
+    <div class="main-content">
+
+      <section class="home-section" id ="home">
+        <div class="content-section">
+          <h1 class = "name-heading">Keerthana Sai Tutika</h1>
+          <p class="description">I'm a <span class="typed"></span></p>
+
+          <div class = "connection-icons-container">
+            <a href = "https://x.com/home" target = "_blank"><i class="fa-brands fa-twitter connection-icon"></i></a>
+            <a href  = "https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook connection-icon"></i></a>
+            <a href = "https://www.instagram.com/keerthana_tutika?igsh=MTBsZzkweng3MHF2dg==" target = "_blank"><i class="fa-brands fa-instagram connection-icon"></i></a>
+            <a href = "https://www.linkedin.com/in/tutika-keerthana-sai/" target="_blank"><i class="fa-brands fa-linkedin connection-icon"></i></a>
+          </div>
+        </div>
+      
+        <div class="image-container">
+          <div class="image"><div class="blur-overlay"></div></div>
+        </div>
+      </section>
+
+    <section class="about-section" id="about">
+      <h2 class="section-title">About</h2>
+      <hr class = "section-highlight"/>
+
+      <div class = "about-content-section">
+        <img src = "PASSPORT PIC.jpg" alt = "passport-pic" class = "self-image">
+
+        <div class = "self-content-section">
+          <h3 class = "role">Software Engineer & Web Developer</h3>
+          <p class = "self-desc">As a dedicated computer science engineering
+            student, I am adept at problem
+            solving,coding,and algorithm design. I am eager
+            to apply my knowledge in a real-world setting
+            and contribute to innovative projects while
+            continuously growing as a professional in the
+            field., I hold myself to high standards, constantly pushing the boundaries of what I can achieve. I approach every task with a strong work ethic,
+             leveraging both my formal education and personal drive to deliver exceptional results.</p>
+
+            <div class = "self-details">
+              <ul class = "details-section">
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Birthday:</strong> <span>6 May 2003</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Phone:</strong> <span>+91 8019796503</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>City:</strong> <span>Vijayawada</span></li>
+              </ul>
+
+              <ul class = "details-section">
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Email:</strong> <span>tutikakeerthanasai@gmail.com</span></li>
+                <li class = "detail"><i class="fa-solid fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <h2 class="skills-section-title">Skills</h2>
+      <hr class="section-highlight" />
+
+      <div class = "skills-section">
+        <div class = "skill-bar">
+          <label for="file">HTML</label><br/>
+          <progress id="file" value="100" max="100"> 32% </progress>
+        </div>
+
+        <div class = "skill-bar">
+          <label for="file">CSS</label><br/>
+          <progress id="file" value="90" max="100"> 90% </progress>
+        </div>
+
+        <div class = "skill-bar">
+          <label for="file">JAVA SCRIPT</label><br/>
+          <progress id="file" value="90" max="100"> 90% </progress>
+        </div>
+
+        <div class = "skill-bar">
+          <label for="file">PYTHON</label><br/>
+          <progress id="file" value="70" max="100"> 70% </progress>
+        </div>
+
+        <div class = "skill-bar">
+          <label for="file">REACT JS</label><br/>
+          <progress id="file" value="80" max="100"> 80% </progress>
+        </div>
+
+        <div class = "skill-bar">
+          <label for="file">SQL</label><br/>
+          <progress id="file" value="60" max="100"> 60% </progress>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <h2 class = "section-title">Resume</h2>
+      <hr class = "section-highlight" />
+
+      <section class = "resume-section">
+
+        <div class = "resume-section1">
+
+          <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line summary-line"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">KEERTHANA SAI TUTIKA</h4>
+                <p><em>Enthusiastic and talented Web Developer with a proven track record in designing and building responsive websites and web applications. Skilled in both front-end and back-end technologies, with a keen focus on crafting intuitive user interfaces, enhancing performance, and ensuring seamless cross-platform functionality.</em></p>
+                <ul class = "resume-content-list">
+                  <li>Vijayawada,Andhra Pradesh</li>
+                  <li>+91 8019796503</li>
+                  <li>tutikakeerthanasai@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+
+           
+            <h3 class="resume-title">Education</h3>
+            
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line edu-line1"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">BACHELOR OF TECHNOLOGY, COMPUTER SCIENCE</h4>
+                <h5 class = "period">2021 - 2024</h5>
+                <p><em>Presidency University, Banglore</em></p>
+                <p class = "edu-desc">I gained expertise in programming languages, algorithms, data structures, software development methodologies, and problem-solving skills, which I leverage to create innovative solutions in the digital realm.</p>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line edu-line2"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">NXTWAVE DISRUPTIVE TECHNOLOGIES</h4>
+                <h5 class = "period">2022 - 2024</h5>
+                <p><em>NxtWave CCBP 4.0 Academy</em></p>
+                <p class = "edu-desc">Industry Ready Certification in Full-stack Development</p>
+                <p class = "edu-desc">The Industry Ready Certification in Full-stack Development provides a concise and practical program covering essential front-end and back-end technologies.  </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class = "resume-section2">
+
+            <h3 class="resume-title">Certifications</h3>
+            
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line cert-line1"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">NPTEL CERTIFICATION IN C</h4>
+                <p class = "edu-desc">Developed a strong understanding of core programming concepts and problem-solving strategies. Gained hands-on experience with writing efficient code and debugging complex programs.</p>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line cert-line2"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">SALESFORCE VIRTUAL INTERNSHIP</h4>
+                <p class = "edu-desc">Completed a virtual internship in Salesforce development, covering core concepts and practical applications within the ecosystem. Gained hands-on experience with tools and best practices to build efficient and scalable solutions.</p>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line cert-line3"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">FULL STACK DEVELOPMENT CERTIFICATION</h4>
+                <p class = "edu-desc">FULL STACK DEVELOPMENT CERTIFICATION
+                  Developed and deployed full-stack applications, demonstrating proficiency in creating end-to-end web solutions. Acquired skills in both front-end and back-end technologies, ensuring seamless integration and performance across the entire stack.</p>
+              </div>
+            </div>
+
+            <h3 class="resume-title">Achievements</h3>
+            
+            <div class="resume-item">
+              <div class = "resume-section-icon">
+                <i class="fa-regular fa-circle"></i>
+                <span class = "line academic-line1"></span>
+              </div>
+
+              <div class = "resume-content">
+                <h4 class = "resume-content-title">ACADEMIC EXCELLENCE </h4>
+                <h5 class = "period">2018 - 2021</h5>
+                <p class = "edu-desc">Graduated as the top student in the Diploma in Computer Science Engineering with a 97% aggregate, showcasing a strong foundation in computing principles and technical expertise.</p>
+              </div>
+            </div>
+
+
+            </div>
+          </section>
+
+
+
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <h2 class = "section-title">Projects</h2>
+      <hr class = "section-highlight" />
+      
+      <div class = "project-cards-container">
+
+        <div class = "project-container">
+          <img src = "Project2.png" alt = "nextrendz-project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">NexTrendz App</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+              <button class = "project-tech-button">REACT JS</button>
+              <button class = "project-tech-button">REST API</button>
+              <button class = "project-tech-button">ROUTING </button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://tutikanxtrendz.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "project-container">
+          <img src = "project3.png" alt = "jobby-project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">Jobby App</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+              <button class = "project-tech-button">REACT JS</button>
+              <button class = "project-tech-button">REST API</button>
+              <button class = "project-tech-button">ROUTING</button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://tutikajobbyapp.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "project-container">
+          <img src = "Project1.png" alt = "netflix-project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">Netflix-clone</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://tutikanetflix.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "project-container">
+          <img src = "Project4.png" alt = "emooji-game-project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">Emoji Game</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+              <button class = "project-tech-button">REACT JS</button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://tutikaemojigame.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "project-container">
+          <img src = "Project5.png" alt = "App-store-project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">App Store</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+              <button class = "project-tech-button">REACT JS</button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://keerthansai.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "project-container">
+          <img src = "Project6.png" alt = "Wikipedia project" class = "project-pic"/>
+
+          <div class = "project-content">
+            <p class = "project-title">Wikipedia Search App</p>
+            <div class = "technologies-container">
+              <button class = "project-tech-button">HTML</button>
+              <button class = "project-tech-button">CSS</button>
+              <button class = "project-tech-button">REACT JS</button>
+              <button class = "project-tech-button">REST API</button>
+              <button class = "project-tech-button">ROUTING</button>
+            </div>
+            <div class = "buttons-container">
+              <button type = "button" class = "visit-button"><a href = "https://tutikawikipedia.ccbp.tech/" target="_blank">Visit</a></button>
+              <button type = "button" class = "code-button">Code</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2 class = "section-title">Contact</h2>
+      <hr class = "section-highlight"/>
+
+      <div class = "contact-content-sections">
+        <div class = "contact-content-section1">
+           
+          <div class = "contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class = "contact-item-details">
+              <h4>Address</h4>
+              <p>Vijayawada,Andhra Pradesh</p>
+            </div>
+          </div>
+
+          <div class = "contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div class = "contact-item-details">
+              <h4>Call Us</h4>
+              <p>+91 8019796503</p>
+            </div>
+          </div>
+
+          <div class = "contact-item">
+            <i class="fa-regular fa-envelope"></i>
+            <div class = "contact-item-details">
+              <h4>Email Us</h4>
+              <p>tutikakeerthanasai@gmail.com</p>
+            </div>
+          </div>
+
+
+         
+
+        </div>
+        <div class = "contact-content-section2">
+          <form class = "contact-form">
+            <input type = "text" class = "input-field" placeholder="Your Name"/>
+            <input type = "text" class = "input-field" placeholder="Your Email"/>
+            <input type = "text" class = "input-field subject" placeholder="Your Subject" /><br />
+            <input type = "text" class = "input-field Message" /><br />
+            <div class = "send-cont">
+              <button type = "button"class = "send-message">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class = "last-section">
+        <h1 class = "name-heading">Keerthana Sai Tutika</h1>
+        <p class = "connection">Connect with me on..</p>
+        <div class = "connection-icons">
+          <a href = "https://x.com/home" target = "_blank"><i class="fa-brands fa-twitter connection-icon"></i></a>
+            <a href  = "https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook connection-icon"></i></a>
+            <a href = "https://www.instagram.com/keerthana_tutika?igsh=MTBsZzkweng3MHF2dg==" target = "_blank"><i class="fa-brands fa-instagram connection-icon"></i></a>
+            <a href = "https://www.linkedin.com/in/tutika-keerthana-sai/" target="_blank"><i class="fa-brands fa-linkedin connection-icon"></i></a>
+            <a href = "https://github.com/Keerthanatutika06/" target ="_blank"><i class="fa-brands fa-github connection-icon"></i></a>
+        </div>
+      </div>
+
+    </section >
+
+  </div>
+
+  </div>
+</body>
+</html>
